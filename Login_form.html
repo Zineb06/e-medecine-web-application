@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html> 
+<head>
+  <title>Se connecter</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="login_form.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+   <div id="particles-js">
+    <a href="index.php" class="btn btn-success">Retour à l'accueil</a>
+  <div class="container"> 
+    <div class="row px-3">
+      <div class="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
+        <div class="img-left d-none d-md-flex"></div>
+
+        <div class="card-body">
+          <h4 class="title text-center mt-4">
+            Se connecter au compte
+          </h4>
+          <form action="login.php" method="POST" class="form-box px-3">
+            <div class="form-input">
+              <span><i class="fa fa-envelope-o"></i></span>
+              <input type="text" name="username" placeholder="Nom d'utilisateur" tabindex="10" required>
+            </div>
+            <div class="form-input">
+              <span><i class="fa fa-key"></i></span>
+              <input type="password" name="pwd" placeholder="Mot de passe" required>
+            </div>
+
+           <!--  <div class="form-input">
+              
+              <input type="password" name="" placeholder="Password" required>
+            </div> -->
+
+            <div class="mb-3">
+              <div class="form-input">
+                 <select  name="type" required>
+                                <option>patient</option>
+                                <option>medecin</option>
+                                <option>admin</option>
+                   </select>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <button type="submit" class="btn btn-block text-uppercase">
+               Se connecter
+              </button>
+            </div>
+
+            <!-- <div class="text-right">
+              <a href="#" class="forget-link">
+                Forget Password?
+              </a>
+            </div> -->
+
+            <hr class="my-4">
+
+            <div class="text-center mb-2">
+              Pas encore un membre?
+              <a href="signup.html" class="register-link">
+                S'inscrire ici
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+  
+    <div class="loader-wrapper">
+    <img src="gif/1.gif">
+</div>
+<style> 
+  .loader-wrapper{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0; 
+overflow: hidden;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+ .container{ position: absolute; font-size: 18px; top: 15%;  left: 10%; }
+  #particles-js{background: #1b4d3e; height: 100%; width: 100%;}
+  body{overflow-y: hidden;}
+
+  </style>
+<script>
+    $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+<script type="text/javascript" src="js/particles.js"></script>
+<script type="text/javascript" src="js/app.js"></script>

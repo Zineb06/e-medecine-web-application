@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif; 
+}
+body{
+	color: #000;
+}
+.container{
+	display: flex;
+}
+.sidebar{
+ 
+	height: 100vh;
+	width: 21%;
+	background: #007f66;
+	color: #000;
+	overflow-y: auto;
+}
+.profile{
+	display: flex;
+	padding: 10px;
+	border-radius: 10px;
+	background:  #1b4d3e;
+	 color: #fff;
+	 position: relative;
+}
+.profile img{
+	margin-top: 10%;
+	width: 50px;
+	height: 50px;
+	border-radius: 30%;
+}
+.profile-data{
+	padding: 10px;
+}
+.profile-data h3{
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+.profile-data span {
+	color: rgb(148, 147, 147);
+}
+
+.messages a{ text-decoration: none; color: black}
+.receiver a{ text-decoration: none; color: black}
+.messages .recents{
+	display: flex;
+	padding: 5px 10px;
+	cursor: pointer;
+	position: relative;
+}
+.recents img{
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	margin-top: 5px;
+}
+.recent-data{
+	padding: 10px;
+}
+.recent-data h3{
+	letter-spacing: 1px;
+	font-size: 17px;
+}
+.recent-data span{
+	color: white;
+	font-size: 13px;
+}
+.messages .active{
+	color: rgb(41, 40, 40);
+}
+.messages .recents:hover{
+	background: gray;
+}
+/*message box*/
+.message-box{
+	color: #000;
+	width: 66%;
+	background:white;
+	position: relative;
+	
+}
+.box-top{
+	display: flex;
+	padding: 10px 20px;
+	background: #007f66;
+}
+
+.box-top .recents{
+	display: flex;
+}
+/*.messages-box .recents:hover{
+	background: none;
+	
+}*/
+.call-actions{
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 15px 20px;
+}
+.action-icons{
+	margin-top: 10px;
+}
+.action-icons i{
+	margin: 10px;
+	border: 1px solid #000;
+	padding: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.action-icons a {
+	text-decoration: none;
+	color: #000;
+}
+.action-icons i:hover{
+	background: rgb(99, 98, 98);
+	color: #fff;
+	transition: all 0.3s;
+
+}
+
+/*chatbox*/
+
+.box{
+	padding: 0px 20px;
+	overflow-y:auto;
+	height: 76vh;
+	position: relative;
+}
+.box .recents{
+	display: flex;
+	margin-top: 20px;
+	max-width: 700px;
+  overflow: hidden;
+}
+.box .recents img{
+	width: 40px;
+	height: 40px;
+	margin-top: 10px;
+}
+.box h3{
+	font-size: 16px;
+	margin-bottom: 10px;
+	color: #006b3c;
+}
+.box .time{
+	background: none;
+	color:gray;
+	font-size: 14px;
+	font-weight: normal;
+}
+.box span{
+	background: linear-gradient(45deg, springgreen, #006b3c,limegreen, lightgreen);
+	color: #fff;
+	padding: 9px 20px;
+	font-size: 16px;
+	border-radius: 0px 30px 30px 30px;
+
+
+}
+.recent-data .fa{
+	visibility: hidden;
+}
+.recent-data:hover .fa{
+	visibility:visible;
+}
+
+.receiver{
+	float: right;
+
+}
+/*.sender{
+	display: block;
+}*/
+.receiver{
+	position: absolute;
+	right: 1%;
+	
+}
+.receiver h3{
+	text-align: right;
+	color: royalblue;
+}
+.receiver span{
+	border-radius: 30px 0px 30px 30px;
+	background: linear-gradient(45deg, blue, deepskyblue ,royalblue, lightblue);
+}
+
+.two{
+	margin-top: 5rem;
+}
+
+.sender .sia-img{
+	width: 250px !important;
+	height: 240px !important;
+	background: gray;
+	padding: 10px;
+	border-radius: 10px !important;
+}
+.input-box{
+	background: #1b4d3e;
+	display: flex;
+	position: absolute;
+	bottom: 0;
+	height: 10vh;
+	width: 100%;
+}
+.input-box img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin: 10px 20px;
+}
+.input-box input{
+	background: transparent;
+	margin-left: 20px;
+	color: #fff;
+	font-size: 13px;
+	width: 65%;
+	border-radius: 20px;
+}
+.input-box button{
+	margin: 30px 10px;
+	color: rgb(99, 98, 98);
+	font-size: 24px;
+	cursor: pointer;
+	background: transparent;
+}
+.input-box .send{
+	color: #16a085;
+	margin: 6px;
+}
+
+/*contact box*/
+.contact{
+	padding: 20px;
+	color: #fff;
+	width: 23%;
+	background:#013220;
+}
+.contact-detail{
+	text-align: center;
+	margin-top: 30px;
+}
+.contact-detail img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.contact-icons{
+	color: rgb(99, 98, 98);
+	margin-top: 10px;
+}
+.contact-icons i{
+	margin: 10px;
+	border: 1px solid rgb(99, 98, 98);
+	padding: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.contact-icons i:hover{
+	background: rgb(99, 98, 98);
+	color: #fff;
+	transition: all 0.3s;
+
+}
+
+/*share*/
+.shared-media{
+	margin-top: 20px;
+}
+.shared{
+	display: flex;
+	margin-top: 20px;
+}
+.shared img{
+	width: 65px;
+	height: 65px;
+}
+.share-data{
+	padding: 10px;
+}
+.shared h3{
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+.shared span{
+	color: rgb(148, 147, 147);
+}
+
+
+#on{ 
+	 color: #08c708;
+  position: absolute;
+  top:50px;
+  left: 50px;
+ }
+ #off{ color: #fa8805 !important;
+  position: absolute;
+  top:50px;
+  left: 50px;
+ } 
+ #on2{ 
+	 color: #08c708;
+  position: relative;
+  top:-3px;
+  left:-15px;
+ }
+ #off2{
+ 	color: #fa8805 !important;
+  position: relative;
+  top:-3px;
+  left:-15px;
+ }
+#on3{ 
+color: #08c708;
+  position: absolute;
+  top:50px;
+  left: 50px;
+ }
+ #off3{ color: #fa8805 !important;
+  position: absolute;
+  top:50px;
+  left:50px;
+ } 

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>animated eyes</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: content-box;
+		}
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-height: 100vh;
+			background: #5d3800;
+		}
+		.face{
+			position: relative;
+			width: 50vmin;
+			height: 50vmin;
+			border-radius: 50%;
+			background: #ffcd00;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.face::before{
+			content: "";
+			position: absolute;
+			top: 32vmin;
+			width: 20vmin;
+			height: 10vmin;
+			background: red;
+			border-bottom-right-radius:10vmin;
+			border-bottom-left-radius: 10vmin;
+			transition: 0.5s;
+		}
+		.face:hover::before{
+			top: 35vmin;
+			width: 7vmin;
+			height: 7vmin;
+			background: red;
+			border-radius: 50%;
+			/*border-bottom-right-radius: 30%;*/
+		}
+
+		.eyes{
+			position: relative;
+			top:-6vmin;
+			display: flex;
+		}
+		.eye{
+			position:relative;
+			width: 15vmin;
+			height: 15vmin;
+			margin: 0 4vmin;
+			display: block;
+			background: #fff;
+			border-radius: 50%;
+		}
+		.eye::before{
+			content: "";
+			position: absolute;
+			left: 5vmin;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			width: 7vmin;
+			height: 7vmin;
+			background: #000;
+			border-radius: 50%;
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="face">
+		<div class="eyes">
+			<div class="eye"></div>
+			<div class="eye"></div>
+		</div>
+	</div>
+
+	<script>
+		document.querySelector('body').addEventListener('mousemove', eyeball);
+		function eyeball(){
+			var eye = document.querySelectorAll('.eye');
+			eye.forEach(function(eye){
+				let x=
+				(eye.getBoundingClientRect().left) + (eye.clientWidth/2);
+				let y=
+				(eye.getBoundingClientRect().top) + (eye.clientHeight/2);
+				let radian= 
+				Math.atan2(event.pageX-x, event.pageY-y);
+				let rot=
+				(radian * (180/Math.PI)* -1)+270;
+				eye.style.transform="rotate("+rot+"deg)";
+			})
+		}
+	</script>
+
+</body>
+</html>

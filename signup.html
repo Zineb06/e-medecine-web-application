@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<!--===  === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Inscription Du Patient</title> 
+</head>
+<body>
+
+
+	<a href="Login_form.html"><button class="backBtn">
+	    <span class="btnText">Se Connecter</span>
+	    <i class="uil uil-navigator"></i>
+    </button></a>
+
+    <div class="container">
+        <form action="signup_pat.php" method="POST">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title"><h5>Informations Personnelles</h5></span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Nom</label>
+                            <input type="text" name="nom" placeholder="Votre Nom.." required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Prenom</label>
+                            <input type="text" name="prenom" placeholder="Votre Prenom.." required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date De Naissance</label>
+                            <input type="date" name="dateN" placeholder="Votre Date De Naissance" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>CIN</label>
+                            <input type="text" name="cin" placeholder="Votre CIN" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Genre</label>
+                            <select name="genre" required>
+                                <option disabled selected>Selectinner votre genre</option>
+                                <option>Femme</option>
+                                <option>Homme</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>NSS</label>
+                            <input type="number" name="nss" placeholder="NSS.." required>
+                        </div>       
+
+                    </div>
+                </div>
+
+              <div class="details ID">
+                    <span class="title">Informations De Contact</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" name="email" placeholder="Votre Email.." required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Numéro De Téléphone</label>
+                            <input type="number" name="tel" placeholder="Votre Numéro télé.." required>
+                        </div>
+
+                         <div class="input-field">
+                            <label>Adresse</label>
+                            <textarea placeholder="Votre Adresse..." name="adresse" required></textarea> 
+                        </div>
+
+                    </div>
+
+                     <div class="details address">
+                    <span class="title">Informations Du Compte</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>User Name</label>
+                            <input type="text" placeholder="Votre Nom D'Utilisateur.." name="username" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Password</label>
+                            <input type="text" placeholder="Votre Mot De Passe..." name="pwd" required>
+                        </div>
+
+                    </div>
+                </div>
+
+	                <div class="buttons">
+	                    <button class="sumbit">
+	                        <span class="btnText">Envoyer</span>
+	                        <i class="uil uil-navigator"></i>
+	                    </button>
+                    </div>
+            </div>
+                  
+          </div> 
+       </div>
+
+   </form>
+ </div>
+
+</body>
+ 
+    <div class="loader-wrapper">
+    <img src="gif/1.gif">
+</div>
+<style> 
+  .loader-wrapper{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0; 
+overflow: hidden;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+ 
+}
+
+  </style>
+<script>
+    $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
+
+<script src="js/script.js"></script>
+</html>

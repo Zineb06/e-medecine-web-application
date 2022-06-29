@@ -1,0 +1,196 @@
+body{
+    background:#1b4d3e;
+/*    background:-webkit-linear-gradient(-45deg,#16a085, lightgreen, #16a085, lightgreen, #16a085, lightgreen, #16a085) ;
+*/    /*background: linear-gradient(-45deg,#16a085, lightgreen, #16a085, mediumspringgreen, #16a085);*/
+overflow: hidden;
+}
+.container{
+    background: linear-gradient(-45deg,#1b4d3e,lightgreen,#1c352d,#1b4d3e,#009e60,#50c878,#1b4d3e);
+            background-size: 400% 400%;
+            width: 100%;
+            height: 100vh;
+            animation: animate 25s ease infinite;
+}
+@keyframes animate{
+            0%{
+                background-position: 0 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0 50%;
+            }
+
+        }
+#join-btn{
+    position: fixed;
+    top:50%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-100px;
+    font-size:18px;
+    padding:20px 40px;
+}
+
+#video-streams{
+
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 3rem;
+    height: 90vh;
+    width: 1400px;
+    margin:0 auto;
+}
+
+.video-container{
+    max-height: 100%;
+    border: 2px solid black;
+    background-color: #203A49;
+}
+
+.video-player{
+    height: 100%;
+    width: 100%;
+}
+
+button{
+    border:none;
+    background-color:#353839;
+    color:#fff;
+    padding:10px 20px;
+    font-size:16px;
+    margin:2px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.3);
+}
+button:hover{
+    background: springgreen;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+#stream-controls{
+    display: none;
+    justify-content: center;
+    margin-top:0.5em;
+}
+
+@media screen and (max-width:1400px){
+    #video-streams{
+
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 95%;
+    }
+}
+
+
+*{
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .wrapper{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            overflow: hidden;
+            /*top: 0;
+            left: 0;*/
+        }
+        .banner-text{
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .banner-text h2{
+            color: #fff;
+            font-family: poppins;
+            text-transform: uppercase;
+            font-size: 50px;
+            border-top: 2vmin solid #fff;
+            border-bottom:  2vmin solid #fff;
+        }
+        .box{
+            position: absolute;
+            bottom:-100px;
+            background: #f2f2f2;
+            opacity: 0.6;
+            animation:  move 10s infinite ease;
+        }
+        @keyframes move{
+            0%{ 
+                bottom: -100px;
+                transform:translateX(0);
+             }
+             50%{ 
+                transform:translateX(150px);
+             }
+             100%{ 
+                bottom: 1000px;
+                transform:translateX(-300px);
+             }
+        }
+        .box:nth-child(1){
+            width: 20vmin;
+            height: 20vmin;
+            left: 7%;
+            animation-delay: 1s;
+        }
+        .box:nth-child(2){
+            width: 25vmin;
+            height: 25vmin;
+            left: 20%;
+            animation-delay: 2s;
+        }
+        .box:nth-child(3){
+            width: 17vmin;
+            height: 17vmin;
+            left: 30%;
+            animation-delay: 3s;
+        }
+        .box:nth-child(4){
+            width: 13vmin;
+            height: 13vmin;
+            left: 40%;
+            animation-delay: 4s;
+        }
+        .box:nth-child(5){
+            width: 10vmin;
+            height: 10vmin;
+            left: 50%;
+            animation-delay: 5s;
+        }
+        .box:nth-child(6){
+            width: 15vmin;
+            height: 15vmin;
+            left: 60%;
+            animation-delay: 2s;
+        }
+        .box:nth-child(7){
+            width: 15vmin;
+            height: 15vmin;
+            left: 70%;
+            animation-delay: 6s;
+        }
+        .box:nth-child(8){
+            width: 10vmin;
+            height: 10vmin;
+            left: 80%;
+            animation-delay: 9s;
+        }
+        .box:nth-child(9){
+            width: 19vmin;
+            height: 19vmin;
+            left: 90%;
+            animation-delay: 8s;
+        }

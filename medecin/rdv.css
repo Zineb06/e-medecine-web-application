@@ -1,0 +1,26 @@
+@keyframes bgcolor {
+    0%   {background-color: rgb(22 160 133);}
+    25%  {background-color: rgb(104, 225, 205);}
+    50%  {background-color: rgb(171, 228, 185);}
+    75%  {background-color: rgb(107, 236, 172);}
+    100% {background-color: rgb(22 160 133);}
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+  -webkit-animation: bgcolor 20s infinite;
+  animation: bgcolor 10s infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}

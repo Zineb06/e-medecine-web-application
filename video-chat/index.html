@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Téléconsultation</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+
+<div class="container">
+    <button id="join-btn">Participer</button>
+   
+    <div id="stream-wrapper">
+        <div id="video-streams"></div>
+
+        <div id="stream-controls">
+            <button id="leave-btn">Quitter</button>
+            <button id="mic-btn">Mic On</button>
+            <button id="camera-btn">Camera On</button>
+
+        </div>
+    </div>
+</div>    
+</body>
+<!-- <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script> -->
+<script src="AgoraRTC_N-4.7.3.js"></script>
+<script src='main.js'></script>
+
+  <div class="loader-wrapper">
+    <img src="../gif/1.gif">
+</div>
+</div>
+<style> 
+  .loader-wrapper{
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+bottom: 0; 
+overflow: hidden;
+background: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+  </style>
+ <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+    $(window).on("load",function(){
+        $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
+</html>
