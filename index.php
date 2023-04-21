@@ -33,12 +33,12 @@
 
     <nav class="navbar">
         <a href="#home">Accueil</a>
-        <a href="#services">services</a>
+        <a href="#services">Services</a>
         <a href="#about">A propos</a>
         <a href="#specialites">Specialités</a>
         <a href="#doctors">Médecins</a>
         <a href="#temoignage">Témoignage</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact">Contacts</a>
     </nav>
 
     <div id="menu-btn" class="fas fa-bars"></div>
@@ -56,7 +56,7 @@
     </div>
 
     <div class="content">
-        <h3>Votre santé, notre priorité</h3>
+        <h3>Votre santé, Notre priorité!</h3>
         <p>Bénéficiez de nos services en vous inscrivons avec nous et contacter plusieurs médecins experts.</p>
         <a href="Login_form.html"><input type="button" value="Login" class="btn"></a>
         <a href="signup.html"><input type="button" value="Sign Up" class="btn"></a>
