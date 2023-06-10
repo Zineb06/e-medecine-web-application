@@ -67,7 +67,7 @@ All you need is an apache http server to import the database and then you need t
     <img width="600" src="https://github.com/Zineb06/e-medecine-web-application/assets/93009591/38a1cb52-7403-48f8-b76f-562eec2c252b"><br>
     <li>adding a time of availability : </li> <br>
     <img width="600" src="https://github.com/Zineb06/e-medecine-web-application/assets/93009591/916d5276-4485-4e76-bff4-afb58f78f12a"><br>
-    <li>list of speciality : </li> <br>
+    <li>list of specialities : </li> <br>
     <img width="600" src="https://github.com/Zineb06/e-medecine-web-application/assets/93009591/5890489e-b760-4869-ac4d-9416a49dff72"><br>
     <li>adding speciality : </li> <br>
     <img width="600" src="https://github.com/Zineb06/e-medecine-web-application/assets/93009591/b06dce5d-4b4d-4a2d-88e9-b240b95db88d"><br>
