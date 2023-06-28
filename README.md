@@ -15,6 +15,15 @@ e-medecine-web-application for e-consulting a doctor and taking an appointement 
  <img width="600" src="https://github.com/Zineb06/e-medecine-web-application/assets/93009591/678dced3-9e2a-46bc-b6c2-5eb950b920ae"><br>
  <img width="600" src="https://github.com/Zineb06/e-medecine-web-application/assets/93009591/19aa3b9d-ef19-48de-8f0f-5a107b0213f0"><br>
 
+  <li>Contacting message :</li> <br>
+ <img width="600" src="https://github.com/Zineb06/e-medecine-web-application/assets/93009591/fabd3389-bbc1-4693-9e57-b06e1f202fbf"><br>
+
+  <li>Contacting email :</li> <br>
+ <img width="600" src="https://github.com/Zineb06/e-medecine-web-application/assets/93009591/5676f131-5cf7-4fd0-9544-fb41600d8755"><br>
+
+  <li>No Results Found :</li> <br>
+ <img width="600" src="https://github.com/Zineb06/e-medecine-web-application/assets/93009591/6f66d9a0-b88e-4bec-b944-69428b4b6a3b"><br>
+
  <li>Register : </li> <br>
     <img width="600" src="https://github.com/Zineb06/e-medecine-web-application/assets/93009591/1e3d026f-dc2c-4613-90fb-fcb503b426d4"><br>
     
