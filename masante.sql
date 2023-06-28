@@ -198,7 +198,7 @@ INSERT INTO `patient` (`cin`, `nom`, `prenom`, `daten`, `genre`, `nss`, `email`,
 ('I343434', 'chahid', 'mohamed', '1993-03-05', 'Homme', 34343434, 'c.mohamed@gmail.com', '0634343434', 'quartier taqadoum n°34 beni mellal', '333', '333', 'hors ligne'),
 ('IA112233', 'Damiati', 'Kawtar', '2001-01-01', 'Femme', 2147483647, 'd.kawtar@gmail.com', '0611221122', 'Quariter taqadoum n°12 Beni Mellal', '121', '121', 'hors ligne'),
 ('IA121212', 'Habti', 'Safae', '2001-10-04', 'Femme', 1212121212, 'h.safae@gmail.com', '0611221122', 'hay mhirzat n°29 kasba tadla', '111', '111', 'hors ligne'),
-('IA12345', 'houmaidi', 'zineb', '06/02/2001', 'femme', 1234567, '  h.zineb@gmail.com', '   06123456789', 'xx rue xx n°xxxxxx', '123', '123', 'hors ligne'),
+('IA12345', 'hmd', 'zineb', '06/02/2001', 'femme', 1234567, '  h.zin@gmail.com', '   06123456789', 'xx rue xx n°xxxxxx', '123', '123', 'hors ligne'),
 ('IA232323', 'Taiek', 'Maha', '2000-11-01', 'Femme', 23232323, 't.maha@gmail.com', '0623232323', 'hay semouzia n°12 kasba tadla', '222', '222', 'hors ligne'),
 ('x', 'widad', 'dani', '2022-06-17', 'Homme', 1111124554, 'xc@fgh.vv', '0647852789', '58 kkkk yyyyyy', '000', '000', 'hors ligne');
 
