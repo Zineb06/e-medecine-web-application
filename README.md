@@ -1,8 +1,14 @@
 e-medecine-web-application for e-consulting a doctor and taking an appointement using php language.<br>
-This application was the work of a final year project for obtaining the bachelor degree.<br>
 # Requirements:
-All you need is an apache http server to import the database and then you need to access to localhost:8080/pfe/index.php in a navigator.
- # Presentation : 
+- apache http server<br>
+- create a database named "masante"<br>
+- Import the database included in the source code<br>
+- access the web-application  in a browser using the url: localhost:8080/pfe/index.php
+- for the login username and password you can use :
+   - patient(username:123  ; password:123)
+   - doctor(username:med3  ; password:med3)
+   - admin(username:admin ; password:admin)
+ # Overview : 
  <li>Home page :</li> <br>
  <img width="600" src="https://github.com/Zineb06/e-medecine-web-application/assets/93009591/817fb86e-a81c-4dad-9e9c-7bd2b5ad6725"><br>
  <img width="600" src="https://github.com/Zineb06/e-medecine-web-application/assets/93009591/678dced3-9e2a-46bc-b6c2-5eb950b920ae"><br>
@@ -71,6 +77,9 @@ All you need is an apache http server to import the database and then you need t
     <img width="600" src="https://github.com/Zineb06/e-medecine-web-application/assets/93009591/5890489e-b760-4869-ac4d-9416a49dff72"><br>
     <li>adding speciality : </li> <br>
     <img width="600" src="https://github.com/Zineb06/e-medecine-web-application/assets/93009591/b06dce5d-4b4d-4a2d-88e9-b240b95db88d"><br>
+
+# Credits : 
+This web application was created by <b> Zineb Houmaidi</b> and <b>Kawtar Damiati</b>.
   
  
 
