@@ -80,8 +80,6 @@ e-medecine-web-application for e-consulting a doctor and taking an appointement 
     <img width="600" src="https://github.com/Zineb06/e-medecine-web-application/assets/93009591/b06dce5d-4b4d-4a2d-88e9-b240b95db88d"><br>
 
 
-# Credits : 
-This web application was created by <b> Zineb H</b> and <b>Kawtar Damiati</b>.
   
  
 
